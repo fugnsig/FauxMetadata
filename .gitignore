@@ -1,0 +1,41 @@
+node_modules/
+dist/
+.tools/
+src-tauri/target/
+src-tauri/gen/
+artifacts/
+*.log
+
+# Original supplied artwork contains provenance IDs; keep its sanitised source copy.
+/FauxMetadata.png
+
+# Internal project notes stay local; publish only the product README.
+*.md
+!/README.md
+!src-tauri/resources/exiftool/VENDOR-README.md
+
+# Local settings, credentials and signing material are never repository content.
+.env
+.env.*
+!.env.example
+.npmrc
+.cargo/credentials
+.cargo/credentials.toml
+*.pem
+*.key
+*.pfx
+*.p12
+*.p8
+*.jks
+*.keystore
+*.snk
+
+# Per-user editor and operating-system state.
+.vs/
+.idea/
+*.suo
+*.user
+*.userosscache
+.DS_Store
+Thumbs.db
+Desktop.ini

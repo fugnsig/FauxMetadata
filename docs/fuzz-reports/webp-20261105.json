@@ -1,0 +1,27 @@
+{
+  "decodedCases": 27587,
+  "elapsedSeconds": 69.2491445,
+  "engine": "ExifTool 13.60",
+  "failures": 0,
+  "malformedMetadataCases": 32,
+  "malformedPublishedAfterSanitization": 0,
+  "maxParserDecoderCaseMs": 0,
+  "method": "seeded mutational and property fuzzing; not coverage-guided libFuzzer",
+  "mutationCases": 200000,
+  "operations": [
+    16740, 16492, 16829, 16424, 16564, 16610, 16533, 16834, 16876, 16669, 16596, 16833
+  ],
+  "published": 64,
+  "realExports": 96,
+  "rejectionReasons": {
+    "Animated WebP is not supported.": 8,
+    "WebP RIFF size mismatch, truncation or trailing data.": 8,
+    "WebP feature flags do not match its chunks.": 5,
+    "WebP metadata requires an extended header.": 11
+  },
+  "safelyRejected": 32,
+  "seed": 20261105,
+  "structurallyAccepted": 48825,
+  "validCarriers": 64,
+  "validPublished": 64
+}

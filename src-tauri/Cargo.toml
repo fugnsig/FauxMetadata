@@ -1,0 +1,33 @@
+[package]
+name = "fauxmetadata"
+version = "1.0.0"
+edition = "2021"
+description = "Offline lossless image metadata inspector and sanitised-copy exporter"
+license = "MIT"
+
+[lib]
+name = "fauxmetadata_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tempfile = "3"
+sha2 = "0.10"
+crc32fast = "1"
+flate2 = "1"
+base64 = "0.22"
+image = { version = "0.25", default-features = false, features = ["png", "jpeg", "webp"] }
+rfd = { version = "0.15", default-features = false, features = ["common-controls-v6"] }
+
+[target.'cfg(windows)'.dependencies]
+windows-sys = { version = "0.61.2", features = ["Win32_UI_Shell", "Win32_System_Com", "Win32_UI_WindowsAndMessaging"] }
+
+[profile.release]
+lto = "thin"
+codegen-units = 1
+strip = true

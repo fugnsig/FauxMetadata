@@ -1,0 +1,15 @@
+# Source uses LF regardless of each contributor's Windows Git configuration.
+* text=auto eol=lf
+
+# The vendor manifest hashes exact bytes, including upstream text line endings.
+src-tauri/resources/exiftool/** -text -whitespace linguist-vendored
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.ico binary
+*.exe binary
+*.dll binary
+*.zip binary
+*.gz binary

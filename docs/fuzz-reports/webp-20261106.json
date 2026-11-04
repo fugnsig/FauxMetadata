@@ -1,0 +1,24 @@
+{
+  "decodedCases": 13704,
+  "elapsedSeconds": 46.4268764,
+  "engine": "ExifTool 13.60",
+  "failures": 0,
+  "malformedMetadataCases": 32,
+  "malformedPublishedAfterSanitization": 8,
+  "maxParserDecoderCaseMs": 0,
+  "method": "seeded mutational and property fuzzing; not coverage-guided libFuzzer",
+  "mutationCases": 100000,
+  "operations": [8437, 8532, 8378, 8241, 8395, 8029, 8339, 8475, 8239, 8388, 8281, 8266],
+  "published": 40,
+  "realExports": 64,
+  "rejectionReasons": {
+    "Animated WebP is not supported.": 8,
+    "Staging inspection: Metadata parser warning: \"[minor] Empty XMP\"": 8,
+    "WebP RIFF size mismatch, truncation or trailing data.": 8
+  },
+  "safelyRejected": 24,
+  "seed": 20261106,
+  "structurallyAccepted": 24085,
+  "validCarriers": 32,
+  "validPublished": 32
+}

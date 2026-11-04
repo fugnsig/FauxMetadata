@@ -1,0 +1,39 @@
+{
+  "name": "fauxmetadata",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 1420 --strictPort",
+    "check": "tsc --noEmit",
+    "lint": "eslint src vite.config.ts vitest.config.ts",
+    "format:check": "prettier --check src scripts docs .github *.md *.json *.ts src-tauri/*.json",
+    "format": "prettier --write src scripts docs .github *.md *.json *.ts src-tauri/*.json",
+    "verify": "node scripts/verify.mjs",
+    "build": "npm run check && npm run verify:vendor && vite build",
+    "verify:vendor": "node scripts/verify-vendor.mjs",
+    "test": "vitest run",
+    "test:layout": "node scripts/layout-smoke.mjs",
+    "tauri": "node scripts/tauri.mjs",
+    "rust:test": "node scripts/rust.mjs test",
+    "fuzz": "node scripts/rust.mjs run --release --example fuzz --",
+    "rust:check": "node scripts/rust.mjs clippy --all-targets -- -D warnings",
+    "rust:fmt": "node scripts/rust.mjs fmt -- --check"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^2.0.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@tauri-apps/cli": "^2.0.0",
+    "eslint": "^10.14.0",
+    "prettier": "^3.9.10",
+    "typescript": "^5.9.0",
+    "typescript-eslint": "^8.72.1",
+    "vite": "^7.0.0",
+    "vitest": "^5.1.0"
+  },
+  "overrides": {
+    "minimatch": "11.0.1"
+  }
+}

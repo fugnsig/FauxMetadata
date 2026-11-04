@@ -1,0 +1,37 @@
+{
+  "decodedCases": 309687,
+  "elapsedSeconds": 173.2514368,
+  "engine": "ExifTool 13.60",
+  "failures": 0,
+  "malformedMetadataCases": 64,
+  "malformedPublishedAfterSanitization": 7,
+  "maxParserDecoderCaseMs": 14,
+  "method": "seeded mutational and property fuzzing; not coverage-guided libFuzzer",
+  "mutationCases": 800000,
+  "operations": [
+    66956, 66734, 66739, 66569, 66778, 66602, 66538, 66678, 66588, 66988, 66271, 66559
+  ],
+  "published": 135,
+  "realExports": 192,
+  "rejectionReasons": {
+    "Invalid PNG text compression flag.": 7,
+    "Invalid compressed PNG metadata: corrupt deflate stream": 6,
+    "Staging inspection: Metadata parser warning: \"Bad IFD0 directory\"": 16,
+    "Staging inspection: Metadata parser warning: \"Bad Photoshop resource data size 4294967280\"": 9,
+    "Staging inspection: Metadata parser warning: \"Bad length ICC_Profile (length 143131593)\"": 1,
+    "Staging inspection: Metadata parser warning: \"Bad length ICC_Profile (length 1703354938)\"": 1,
+    "Staging inspection: Metadata parser warning: \"Bad length ICC_Profile (length 1948540466)\"": 1,
+    "Staging inspection: Metadata parser warning: \"Bad length ICC_Profile (length 2653138280)\"": 1,
+    "Staging inspection: Metadata parser warning: \"Bad length ICC_Profile (length 3468905076)\"": 1,
+    "Staging inspection: Metadata parser warning: \"Bad length ICC_Profile (length 3646315230)\"": 1,
+    "Staging inspection: Metadata parser warning: \"Bad length ICC_Profile (length 393302517)\"": 1,
+    "Staging inspection: Metadata parser warning: \"Bad length ICC_Profile (length 3966743330)\"": 1,
+    "Staging inspection: Metadata parser warning: \"Bad length ICC_Profile (length 583563193)\"": 1,
+    "Staging inspection: Metadata parser warning: \"[minor] Empty XMP\"": 10
+  },
+  "safelyRejected": 57,
+  "seed": 4294967291,
+  "structurallyAccepted": 390430,
+  "validCarriers": 128,
+  "validPublished": 128
+}

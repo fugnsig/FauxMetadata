@@ -1,0 +1,16 @@
+# Third-party notices
+
+FauxMetadata application source is distributed under the MIT licence. Bundled third-party components retain their own licences.
+
+- **ExifTool 13.60**, Phil Harvey: [upstream](https://exiftool.org/), [source tag](https://github.com/exiftool/exiftool/tree/13.60). ExifTool uses the same licence terms as Perl (Artistic or GPL). Source, documentation and licence text are retained in the bundled `resources/exiftool/exiftool_files` tree.
+- **Strawberry Perl Windows runtime**, [Strawberry Perl](https://strawberryperl.com/). Licence materials are retained as `LICENSE` and `Licenses_Strawberry_Perl.zip` in `exiftool_files`.
+- **Windows portable launcher**, Oliver Betz, CC0. The bundled `exiftool_files/readme_windows.txt` records its provenance and licence.
+- **exiftool-vendored.exe 13.60.0 packaging**, Matthew McEachen / PhotoStructure, MIT: [source](https://github.com/photostructure/exiftool-vendored.exe). The package README, licence and single downstream patch are shipped beside the runtime. FauxMetadata does not use its JavaScript wrapper. Archive SRI and a complete file hash inventory are recorded in `docs/exiftool-manifest.json`.
+- **Tauri, image, image-webp, quick-error, serde, serde_json, tempfile, sha2, crc32fast, flate2, base64, rfd** and transitive Rust components: versions and upstream licence metadata are available in `src-tauri/Cargo.lock` and their published crate packages.
+- **@tauri-apps/api** and development tools: pinned in `package-lock.json`; their original licence files remain in the installed package distributions.
+
+The WebP decoder is the pure Rust image-webp 0.2.4 crate (MIT OR Apache-2.0), enabled through the existing image crate; it does not require an external WebP executable at runtime.
+
+Application artwork is supplied by the project owner; its tracked source is src-tauri/icons/source.png. Synthetic test images were created for FauxMetadata. System Segoe UI fonts are referenced by name and are not redistributed.
+
+Distribution changes: Garmin.pm and LNK.pm contain nonfunctional source-comment edits dated 2026-11-04, marked in each file header. Executable logic and upstream copyright/licence notices are unchanged. The file inventory records the distributed bytes.

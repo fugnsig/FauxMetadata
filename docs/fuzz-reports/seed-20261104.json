@@ -1,0 +1,18 @@
+{
+  "decodedCases": 77912,
+  "elapsedSeconds": 129.9902181,
+  "engine": "ExifTool 13.60",
+  "failures": 0,
+  "maxParserDecoderCaseMs": 4,
+  "method": "seeded mutational and property fuzzing; not coverage-guided libFuzzer",
+  "mutationCases": 200000,
+  "operations": [
+    16587, 16541, 16468, 16543, 16939, 16719, 16746, 16665, 16471, 16714, 16797, 16810
+  ],
+  "published": 128,
+  "realExports": 128,
+  "rejectionReasons": {},
+  "safelyRejected": 0,
+  "seed": 20261104,
+  "structurallyAccepted": 97965
+}
